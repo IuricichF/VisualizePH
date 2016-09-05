@@ -18,7 +18,7 @@ When no filtering function is defined, the height (z coordinate) of each vertex 
 ######Visualizing Persistence Pairs
 The second package is a WebGl interactive tool for visualizing persistence pairs.
 
-![alt text](https://github.com/IuricichF/VisualizePH/master/images/interface.png "Main interface")
+![Main Interface](https://raw.githubusercontent.com/IuricichF/VisualizePH/master/images/interface.png)
 
 The 3D scene is implemented in [THREEJS](http://threejs.org), a javascript library based on WebGL. Persistence pairs are here depicted as spheres colored according to the simplex dimension (vertices-blue, edges-green, triangles-red). Each sphere is drawn at the barycenter of the corresponding simplex. Interactions with the 3D scene are limited to an orbiting camera allowing to change the point of view.
 
@@ -30,9 +30,9 @@ Using plotly the user can interactively select subsets of the persistence pairs.
 
 2. Scene modifying interactions change the number of critical pairs visualized in the 3D view and are the main tool for the interactive analysis. Two different tools (box or lazo selection tools) can be used for selecting a subset of points from the graph. Pairs excluded from the selection are also removed from the 3D view of the scene.
 
-![alt text](https://github.com/IuricichF/VisualizePH/master/images/lazoSelection.png "Selecting a subset of points with the lazo tool")
+![Lazo selection](https://raw.githubusercontent.com/IuricichF/VisualizePH/master/images/lazoSelection.png)
 
-![alt text](https://github.com/IuricichF/VisualizePH/master/images/singlePoint.png "Selecting a single point moving the mouse over the point")
+![Single Point](https://raw.githubusercontent.com/IuricichF/VisualizePH/master/images/singlePoint.png)
 
 <br /><br />
 ####Quick Start
