@@ -38,21 +38,40 @@ Using plotly the user can interactively select subsets of the persistence pairs.
 ####Quick Start
 ***
 
-The C++ package can be compiled from QTCreator or by using qmake.
+The bash script runViz.sh compiles the C++ package, computes the persistence pairs on the input mesh and sets up the local webserver for running the visualization tool. To use the script type in your terminal
 
-To run the visualizer locally you will need to set up a basic web server. Using python you can simply use
+```
+sh runVis.sh [meshFile]
+```
+
+Remember that [meshFile] has to be in .ply format.
+The main steps taken by the script are:
+
+- compiling the C++ program
+
+```
+g++  -I./source/include/ source/main.cpp -std=c++11 -o computePers
+```
+
+- computing the persistence pairs
+
+```
+./computePers [meshFile]
+```
+
+- setting up a local web server. Using python we can simply use
 
 ```
 python -m SimpleHTTPServer 8000
 ```
 
-This will serve files from the current directory at localhost under port 8000:
+This will serve files from the current directory at localhost under port 8000. Other simple alternatives are discussed [here](http://stackoverflow.com/questions/12905426/what-is-a-faster-alternative-to-pythons-simplehttpserver) on Stack Overflow.
+
+To see the result open a browser and visit the following link
 
 ```
 http://localhost:8000/
 ```
-
-Other simple alternatives are discussed [here](http://stackoverflow.com/questions/12905426/what-is-a-faster-alternative-to-pythons-simplehttpserver) on Stack Overflow.
 
 <br />
 
