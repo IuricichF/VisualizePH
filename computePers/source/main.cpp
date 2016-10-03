@@ -104,10 +104,6 @@ int main(int argc, char* argv[])
         }
     }
 
-    cout << totalOrder << " " << orderedSimplices.size() << " " << simplToIndex.size() << endl;
-
-    assert(totalOrder == simplToIndex.size());
-
     boundary_matrix< phat::vector_vector > bMatrix;
     bMatrix.set_num_cols( totalOrder );
     cout << totalOrder << endl;
